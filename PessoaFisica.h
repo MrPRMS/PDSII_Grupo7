@@ -13,7 +13,8 @@ public:
 	PessoaFisica(){};
 	~PessoaFisica(){};
 	std::string get_cpf(){ return cpf;};
-	static std::vector<Pessoa *> pesquisaPessoaCPF(std::string cpf);
+	static std::vector<PessoaFisica *> pesquisaPessoaCPF(std::string cpf);
+	static std::map<unsigned int, PessoaFisica*> listar();
 	void set_cpf(std::string cpf){this->cpf=removeMascara(cpf);};
 };
 #endif
