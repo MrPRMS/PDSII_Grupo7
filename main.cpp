@@ -37,12 +37,12 @@ int main(int argc, char **argv)
 				printf("Agendar Coleta:\n");
 				break;
 			case 4:
-				printf("Doe depois...tchau!\n");
+				printf("\n\tDoe depois...tchau!\n");
 				return 0;
 				break;
 			default:
 				
-				std::cout << "Opcao inexistente! Tente outra.\n" << std::endl;
+				std::cout << "\n\tOpcao inexistente! Tente outra.\n" << std::endl;
 				system("pause");
 				break;
 		}
