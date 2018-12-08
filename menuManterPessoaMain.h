@@ -8,12 +8,17 @@
 #include "PessoaJuridica.h"
 #include "PessoaFisica.h"
 #include <vector>
+#include <iomanip>
+#include "Util.h"
+#include <map>
 
 void listarPessoas();
 
 void criarOuAlterarPessoaFisica(PessoaFisica * pf);
 
 void alterarPessoa();
+
+void deletarPessoa();
 
 void cadastrarPessoa();
 
