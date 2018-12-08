@@ -10,19 +10,19 @@
 
 class Agendamento{
 
-protected:
+private:
 	
-	unsigned int _id;		//id do agendamento
+	unsigned int _id=0;		//id do agendamento
 	std::string _data; 		//data do agendamento
 	std::string _local; 	//local do agendamento
 	Usuario _doador;		//nome do doador
-	Usuario _receptor;		//nome do recptor
+	Usuario _receptor;		//nome do receptor
 	Material _material;		//material a ser doado
 	static std::map<unsigned int, Agendamento *> _agendamentos;
 
 public:
 	
-	Agendamento(){_id=0;};		//construtor
+	Agendamento();		//construtor
 	
 	unsigned int get_id(){		//acesso ao id
 		return _id;
@@ -38,7 +38,7 @@ public:
 
 	static void deletar();								//deletar agendamento
 
-	static void modificar();							//modificar agendamento
+	static void modificar(Agendamento agendamento);							//modificar agendamento
 
 	static std::vector<Agendamento *> listar();			//listar agendamentos cadastrados
 
