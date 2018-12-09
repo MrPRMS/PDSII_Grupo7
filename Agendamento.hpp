@@ -7,6 +7,7 @@
 #include <vector>
 #include "Usuario.h"
 #include "Material.h"
+#include "PontoDeColeta.h"
 
 class Agendamento{
 
