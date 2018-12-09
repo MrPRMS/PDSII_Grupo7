@@ -2,6 +2,7 @@
 #define AGENDAMENTO_H_
 
 #include <iostream>
+#include <stdio.h>
 #include <map>
 #include <functional>
 #include <vector>
@@ -13,13 +14,15 @@ class Agendamento{
 
 private:
 	
-	unsigned int _id=0;		//id do agendamento
+	unsigned int _id;		//id do agendamento
+	static unsigned int next_id;
 	std::string _data; 		//data do agendamento
 	std::string _local; 	//local do agendamento
 	Usuario _doador;		//nome do doador
 	Usuario _receptor;		//nome do receptor
 	Material _material;		//material a ser doado
 	static std::map<unsigned int, Agendamento *> _agendamentos;
+	bool _status;			//status do agendamento: 0-não realizado, 1-realizado
 
 public:
 	
@@ -28,6 +31,10 @@ public:
 	unsigned int get_id(){		//acesso ao id
 		return _id;
 	} 
+	
+	void set_id(int identificador){				//definir id
+		this->_id=identificador;
+	}
 	
 	~Agendamento(){};			//destrutor
 	
@@ -84,6 +91,17 @@ public:
 	void set_material(Material material){				//definir material
 		this->_material=material;
 	}
+	
+	bool get_status(){							//obter status
+		return _status;
+	}
+	
+	void set_status(bool status){				//definir status
+		this->_status=status;
+	}
+	
+	static unsigned int get_new_id();
+	
 };
 
 #endif
