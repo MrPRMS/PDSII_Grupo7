@@ -9,14 +9,25 @@ std::string PessoaFisica::removeMascara(std::string cpf){
 	return cpf;	
 }
 
-std::vector<Pessoa *> PessoaFisica::pesquisaPessoaCPF(std::string cpf){
-	std::vector<Pessoa *> pessoas=std::vector<Pessoa *>();
+std::vector<PessoaFisica *> PessoaFisica::pesquisaPessoaCPF(std::string cpf){
+	std::vector<PessoaFisica *> pessoas=std::vector<PessoaFisica *>();
 	for ( std::map<unsigned int, Pessoa *>::iterator it=Pessoa::pessoas.begin(); it!=Pessoa::pessoas.end(); ++it){
 		PessoaFisica* pessoa = dynamic_cast<PessoaFisica*>(it->second);
 		if(pessoa){
 			if (pessoa->get_cpf()==cpf)
 				pessoas.push_back(pessoa);
 		}
+	}
+	return pessoas;
+	
+}
+
+std::map<unsigned int, PessoaFisica *> PessoaFisica::listar(){
+	std::map<unsigned int, PessoaFisica *> pessoas=std::map<unsigned int, PessoaFisica *>();
+	for ( std::map<unsigned int, Pessoa *>::iterator it=Pessoa::pessoas.begin(); it!=Pessoa::pessoas.end(); ++it){
+		PessoaFisica* pessoa = dynamic_cast<PessoaFisica*>(it->second);
+		if(pessoa)
+			pessoas.insert(std::pair<unsigned int, PessoaFisica *>(pessoa->get_id(),pessoa));
 	}
 	return pessoas;
 	

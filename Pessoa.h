@@ -29,11 +29,11 @@ public:
 
 	static void cadastrar(Pessoa *pessoa);
 
-	static void deletar();
+	static void deletar(Pessoa *pessoa);
 
-	static void modificar();
+	static void modificar(Pessoa * pessoa);
 
-	static std::vector<Pessoa *> listar();
+	static std::map<unsigned int, Pessoa *> listar();
 
 	static void pesquisar();
 	
