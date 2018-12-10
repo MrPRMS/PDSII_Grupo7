@@ -2,6 +2,9 @@
 #include <iostream>
 #include <cstdlib>
 #include <menuManterPessoaMain.h>
+#include "MenuAgendamento.h"
+#include "PontoDeColeta.h"
+
 /*
 #include "PessoaJuridica.h"
 #include "PessoaFisica.h"
@@ -22,7 +25,8 @@ int main(int argc, char **argv)
 					 "\n\t1 - Manter Pessoa"
 					 "\n\t2 - Manter Material"
 					 "\n\t3 - Agendar Coleta"
-					 "\n\t4 - Sair" << std::endl;
+					 "\n\t4 - Pontos de Coleta"
+					 "\n\t5 - Sair" << std::endl;
 		std::cout << "\n\tEscolha uma das alternativas e tecle enter: ";
 		std::cin >> _opcao;
 		
@@ -31,18 +35,23 @@ int main(int argc, char **argv)
 				menuManterPessoa();
 				break;
 			case 2:
-				printf("Manter Material:\n");
+				printf("\n\tManter Material:\n\n");
 				break;
 			case 3:
-				printf("Agendar Coleta:\n");
+				printf("\n\tAgendar Coleta:\n\n");
+				menuAgendamento();
 				break;
 			case 4:
-				printf("\n\tDoe depois...tchau!\n");
+				printf("\n\tPontos de Coleta\n");
+				printf("\n\tEm desenvolvimento ;) \n\n");;
+				break;
+			case 5:
+				printf("\n\tDoe depois...tchau!\n\n");
 				return 0;
 				break;
 			default:
 				
-				std::cout << "\n\tOpcao inexistente! Tente outra.\n" << std::endl;
+				std::cout << "\n\tOpcao inexistente! Tente outra.\n\n" << std::endl;
 				system("pause");
 				break;
 		}
