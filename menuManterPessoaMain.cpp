@@ -11,9 +11,9 @@ void deletarPessoa(){
 		std::cout << "\n\tComo deseja deletar:"<<std::endl;
 		std::cout <<
 					 "\n\t1 - CPF"
-					 "\n\t2 - CNPJ"
-					 "\n\t3 - Nome"
-					 "\n\t4 - Razao Social"
+					 "\n\t2 - CNPJ - Em desenvolvimento"
+					 "\n\t3 - Nome - Em desenvolviemnto"
+					 "\n\t4 - Razao Socialm- Em desenvolvimento"
 					 "\n\t5 - Voltar" << std::endl;
 		std::cout << "\n\tInforme um criterio de pesquisa e tecle enter: ";
 		
@@ -127,7 +127,7 @@ void listarPessoas(){
 		std::cout << "\n\tO que deseja listar:"<<std::endl;
 		std::cout <<
 						 "\n\t1 - Pessoa Fisica"
-						 "\n\t2 - Pessoa Juridica"
+						 "\n\t2 - Pessoa Juridica - Em desenvolvimento"
 						 "\n\t3 - Voltar"<< std::endl;
 		std::cout << "\n\tEscolha uma das alternativas e tecle enter: ";
 		std::cin >> _opcao;
@@ -250,9 +250,9 @@ void alterarPessoa(){
 		std::cout << "\n\tComo deseja procurar:"<<std::endl;
 		std::cout <<
 					 "\n\t1 - CPF"
-					 "\n\t2 - CNPJ"
-					 "\n\t3 - Nome"
-					 "\n\t4 - Razao Social"
+					 "\n\t2 - CNPJ - Em desenvolvimento"
+					 "\n\t3 - Nome - Em desenvolvimento"
+					 "\n\t4 - Razao Social - Em desenvolvimento"
 					 "\n\t5 - Voltar" << std::endl;
 		std::cout << "\n\tInforme um criterio de pesquisa e tecle enter: ";
 		
@@ -450,7 +450,6 @@ void carregaPessoasTeste(){
 }
 
 void menuManterPessoa(){
-	carregaPessoasTeste();		
 	int _opcao=0;
 	while(_opcao!=5){
 		system("cls");
