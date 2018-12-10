@@ -24,4 +24,6 @@ void cadastrarPessoa();
 
 void menuManterPessoa();
 
+void carregaPessoasTeste();
+
 #endif
