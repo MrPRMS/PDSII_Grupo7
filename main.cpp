@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <cstdlib>
-#include <menuManterPessoaMain.h>
+#include "menuManterPessoaMain.h"
+#include "menuManterMaterialMain.h"
 #include "MenuAgendamento.h"
 #include "PontoDeColeta.h"
 
@@ -13,6 +14,8 @@
 
 int main(int argc, char **argv)
 {
+	carregaPessoasTeste();
+	carregaMateriaisTeste();
 	int _opcao=0;
 	while(_opcao!=4){
 		system("cls");
@@ -35,10 +38,9 @@ int main(int argc, char **argv)
 				menuManterPessoa();
 				break;
 			case 2:
-				printf("\n\tManter Material:\n\n");
+				menuManterMaterial();
 				break;
 			case 3:
-				printf("\n\tAgendar Coleta:\n\n");
 				menuAgendamento();
 				break;
 			case 4:
