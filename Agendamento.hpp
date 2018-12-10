@@ -26,17 +26,17 @@ private:
 
 public:
 	
-	Agendamento();		//construtor
+	Agendamento();										//construtor
 	
-	unsigned int get_id(){		//acesso ao id
+	unsigned int get_id(){								//acesso ao id
 		return _id;
 	} 
 	
-	void set_id(int identificador){				//definir id
+	void set_id(int identificador){						//definir id
 		this->_id=identificador;
 	}
 	
-	~Agendamento(){};			//destrutor
+	~Agendamento(){};									//destrutor
 	
 	std::map<unsigned int, Agendamento *> get_agendamentos(){
 		return _agendamentos;
@@ -46,7 +46,7 @@ public:
 
 	static void deletar();								//deletar agendamento
 
-	static void modificar(Agendamento agendamento);							//modificar agendamento
+	static void modificar(Agendamento agendamento);		//modificar agendamento
 
 	static std::vector<Agendamento *> listar();			//listar agendamentos cadastrados
 
@@ -99,6 +99,7 @@ public:
 	void set_status(bool status){				//definir status
 		this->_status=status;
 	}
+	
 	
 	static unsigned int get_new_id();
 	
