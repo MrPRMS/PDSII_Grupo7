@@ -1,22 +1,25 @@
 #include "MenuAgendamento.h"
 
 void deletarAgendamento(){
-	std::cout<<"\n\t\tFunção MenuAgendamento::deletarAgendamento\n";
+	//std::cout<<"\n\t\tFunção MenuAgendamento::deletarAgendamento\n";
+	std::cout<<"\n\t\tFuncao em desenvolvimento ;)\n\n";
 	system("pause");
 }
 
 void listarAgendamentos(){ 
-	std::cout<<"n\\t\tFunção MenuAgendamento::listarAgendamentos\n\n";
+	//std::cout<<"n\\t\tFunção MenuAgendamento::listarAgendamentos\n\n";
+	std::cout<<"\n\t\tFuncao em desenvolvimento ;)\n\n";
 	system("pause");
 }
 
 void alterarAgendamento(){
-	std::cout<<"\n\t\tFunção MenuAgendamento::alterarAgendamento\n";
+	//std::cout<<"\n\t\tFunção MenuAgendamento::alterarAgendamento\n";
+	std::cout<<"\n\t\tFuncao em desenvolvimento ;)\n\n";
 	system("pause");
 }
 
 void cadastrarAgendamento(){
-	std::cout<<"\n\t\tFunção MenuAgendamento::cadastrarAgendamento\n";
+	//std::cout<<"\n\t\tFunção MenuAgendamento::cadastrarAgendamento\n";
 	system("pause");
 
 	system("cls");
@@ -97,7 +100,7 @@ void cadastrarAgendamento(){
 }
 
 void menuAgendamento(){
-		std::cout<<"\n\t\tFunção MenuAgendamento::menuAgendamento\n\n";
+		//std::cout<<"\n\t\tFunção MenuAgendamento::menuAgendamento\n\n";
 		system("pause");
 		
 	//carregaAgendamentossTeste();		
