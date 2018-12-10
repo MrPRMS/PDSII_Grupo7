@@ -6,19 +6,27 @@
 
 class Material
 {
-    public:
-        Material();
-        virtual ~Material();
-        int EscolherTipoResiduo();//Esse metodo deve ser chamado para que o usuario escolha um tipo de residuo que vai doar ou receber. So existem 4 possibilidades: retorna 1 para metal,2 para papel, 3 para plastico , 4 para vidro e 0 quando desiste de escolher um material
-        void PodemSerReciclados (int codigo); // Esse metodo e o seguinte servem apenas para apresentar ao usuario os objetos que podem ou não ser recolhidos. Depois que o usuario ler a relacao deverá confirmar ou nao a escolha daquele material
-        void NaoPodemSerReciclados (int codigo);
+public:
+	Material();
+	virtual ~Material();
+	int EscolherTipoResiduo();//Esse metodo deve ser chamado para que o usuario escolha um tipo de residuo que vai doar ou receber. So existem 4 possibilidades: retorna 1 para metal,2 para papel, 3 para plastico , 4 para vidro e 0 quando desiste de escolher um material
+	void PodemSerReciclados (int codigo); // Esse metodo e o seguinte servem apenas para apresentar ao usuario os objetos que podem ou nÃ£o ser recolhidos. Depois que o usuario ler a relacao deverÃ¡ confirmar ou nao a escolha daquele material
+	void NaoPodemSerReciclados (int codigo);
+	
+	int get_codigo(){								//obter codigo
+		return _codigo;
+	}
+	
+	void set_codigo(int codigo){						//definir codigo
+		this->_codigo=codigo;
+	}
 
+protected:
+	int _codigo;
+	std::string _confirma;
 
-    protected:
-        int _codigo;
-        std::string _confirma;
+private:
 
-    private:
 };
 
 #endif // MATERIAL_H
