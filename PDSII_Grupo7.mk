@@ -2,216 +2,145 @@
 ## Auto Generated makefile by CodeLite IDE
 ## any manual changes will be erased      
 ##
-## Debug
-ProjectName            :=PDSII_Grupo7
-ConfigurationName      :=Debug
-WorkspacePath          :=C:/workspace/workspace
-ProjectPath            :=C:/workspace/workspace/PDSII_Grupo7
-IntermediateDirectory  :=./Debug
-OutDir                 := $(IntermediateDirectory)
-CurrentFileName        :=
-CurrentFilePath        :=
-CurrentFileFullPath    :=
-User                   :=paulo
-Date                   :=09/12/2018
-CodeLitePath           :="C:/Program Files/CodeLite"
-LinkerName             :=C:/TDM-GCC-64/bin/g++.exe
-SharedObjectLinkerName :=C:/TDM-GCC-64/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.i
-DebugSwitch            :=-g 
-IncludeSwitch          :=-I
-LibrarySwitch          :=-l
-OutputSwitch           :=-o 
-LibraryPathSwitch      :=-L
-PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
-OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
-Preprocessors          :=
-ObjectSwitch           :=-o 
-ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E
-ObjectsFileList        :="PDSII_Grupo7.txt"
-PCHCompileFlags        :=
-MakeDirCommand         :=makedir
-RcCmpOptions           := 
-RcCompilerName         :=C:/TDM-GCC-64/bin/windres.exe
-LinkOptions            :=  
+ObjectSwitch           :=-o
+IncludeSwitch          :=-I
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
-IncludePCH             := 
-RcIncludePath          := 
-Libs                   := 
-ArLibs                 :=  
-LibPath                := $(LibraryPathSwitch). 
+OutputSwitch           :=-o
 
 ##
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := C:/TDM-GCC-64/bin/ar.exe rcu
-CXX      := C:/TDM-GCC-64/bin/g++.exe
-CC       := C:/TDM-GCC-64/bin/gcc.exe
-CXXFLAGS :=  -g -O0 -std=c++11 -Wall $(Preprocessors)
-CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
+AR       := C:\TDM-GCC-64\bin\ar.exe rcu
+CXX      := C:\TDM-GCC-64\bin\g++.exe
+CC       := C:\TDM-GCC-64\bin\gcc.exe
+CXXFLAGS :=  -g -O0 -std=c++11 -Wall 
+CFLAGS   :=  -g -O0 -Wall 
 ASFLAGS  := 
-AS       := C:/TDM-GCC-64/bin/as.exe
+AS       := C:\TDM-GCC-64\bin\as.exe
 
+all: main
 
-##
-## User defined environment variables
-##
-CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/PontoDeColeta.cpp$(ObjectSuffix) $(IntermediateDirectory)/MenuAgendamento.cpp$(ObjectSuffix) $(IntermediateDirectory)/menuManterMaterialMain.cpp$(ObjectSuffix) $(IntermediateDirectory)/Alimento.cpp$(ObjectSuffix) $(IntermediateDirectory)/Residuo.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Material.cpp$(ObjectSuffix) $(IntermediateDirectory)/PessoaFisica.cpp$(ObjectSuffix) $(IntermediateDirectory)/Util.cpp$(ObjectSuffix) $(IntermediateDirectory)/PessoaJuridica.cpp$(ObjectSuffix) \
-	$(IntermediateDirectory)/Agendamento.cpp$(ObjectSuffix) $(IntermediateDirectory)/menuManterPessoaMain.cpp$(ObjectSuffix) $(IntermediateDirectory)/Usuario.cpp$(ObjectSuffix) $(IntermediateDirectory)/Pessoa.cpp$(ObjectSuffix) 
+PontoDeColeta.cpp.o: PontoDeColeta.cpp PontoDeColeta.cpp.o.d
+	$(CXX)  $(SourceSwitch) "PontoDeColeta.cpp" $(CXXFLAGS) $(ObjectSwitch)PontoDeColeta.cpp.o $(IncludePath)
+PontoDeColeta.cpp.o.d: PontoDeColeta.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePath) -MG -MP -MTPontoDeColeta.cpp.o -MFPontoDeColeta.cpp.o.d -MM PontoDeColeta.cpp
 
+PontoDeColeta.cpp-i: PontoDeColeta.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) PontoDeColeta.cpp-i PontoDeColeta.cpp
 
+MenuAgendamento.cpp.o: MenuAgendamento.cpp MenuAgendamento.cpp.o.d
+	$(CXX)  $(SourceSwitch) "MenuAgendamento.cpp" $(CXXFLAGS) $(ObjectSwitch)MenuAgendamento.cpp.o $(IncludePath)
+MenuAgendamento.cpp.o.d: MenuAgendamento.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTMenuAgendamento.cpp.o -MFMenuAgendamento.cpp.o.d -MM MenuAgendamento.cpp
 
-Objects=$(Objects0) 
+MenuAgendamento.cpp-i: MenuAgendamento.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) MenuAgendamento.cpp-i MenuAgendamento.cpp
 
-##
-## Main Build Targets 
-##
-.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
-all: $(OutputFile)
+menuManterMaterialMain.cpp.o: menuManterMaterialMain.cpp menuManterMaterialMain.cpp.o.d
+	$(CXX)  $(SourceSwitch) "menuManterMaterialMain.cpp" $(CXXFLAGS) $(ObjectSwitch)menuManterMaterialMain.cpp.o $(IncludePath)
+menuManterMaterialMain.cpp.o.d: menuManterMaterialMain.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTmenuManterMaterialMain.cpp.o -MFmenuManterMaterialMain.cpp.o.d -MM menuManterMaterialMain.cpp
 
-$(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
-	@$(MakeDirCommand) $(@D)
-	@echo "" > $(IntermediateDirectory)/.d
-	@echo $(Objects0)  > $(ObjectsFileList)
-	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
+menuManterMaterialMain.cpp-i: menuManterMaterialMain.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) menuManterMaterialMain.cpp-i menuManterMaterialMain.cpp
 
-MakeIntermediateDirs:
-	@$(MakeDirCommand) "./Debug"
+Alimento.cpp.o: Alimento.cpp Alimento.cpp.o.d
+	$(CXX)  $(SourceSwitch) "Alimento.cpp" $(CXXFLAGS) $(ObjectSwitch)Alimento.cpp.o $(IncludePath)
+Alimento.cpp.o.d: Alimento.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTAlimento.cpp.o -MFAlimento.cpp.o.d -MM Alimento.cpp
 
+Alimento.cpp-i: Alimento.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) Alimento.cpp-i Alimento.cpp
 
-$(IntermediateDirectory)/.d:
-	@$(MakeDirCommand) "./Debug"
+Residuo.cpp.o: Residuo.cpp Residuo.cpp.o.d
+	$(CXX)  $(SourceSwitch) "Residuo.cpp" $(CXXFLAGS) $(ObjectSwitch)Residuo.cpp.o $(IncludePath)
+Residuo.cpp.o.d: Residuo.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTResiduo.cpp.o -MFResiduo.cpp.o.d -MM Residuo.cpp
 
-PreBuild:
+Residuo.cpp-i: Residuo.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) Residuo.cpp-i Residuo.cpp
 
+main.cpp.o: main.cpp main.cpp.o.d
+	$(CXX)  $(SourceSwitch) "main.cpp" $(CXXFLAGS) $(ObjectSwitch)main.cpp.o $(IncludePath)
+main.cpp.o.d: main.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTmain.cpp.o -MFmain.cpp.o.d -MM main.cpp
 
-##
-## Objects
-##
-$(IntermediateDirectory)/PontoDeColeta.cpp$(ObjectSuffix): PontoDeColeta.cpp $(IntermediateDirectory)/PontoDeColeta.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/PontoDeColeta.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/PontoDeColeta.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/PontoDeColeta.cpp$(DependSuffix): PontoDeColeta.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/PontoDeColeta.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/PontoDeColeta.cpp$(DependSuffix) -MM PontoDeColeta.cpp
+main.cpp-i: main.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) main.cpp-i main.cpp
 
-$(IntermediateDirectory)/PontoDeColeta.cpp$(PreprocessSuffix): PontoDeColeta.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/PontoDeColeta.cpp$(PreprocessSuffix) PontoDeColeta.cpp
+Material.cpp.o: Material.cpp Material.cpp.o.d
+	$(CXX)  $(SourceSwitch) "Material.cpp" $(CXXFLAGS) $(ObjectSwitch)Material.cpp.o $(IncludePath)
+Material.cpp.o.d: Material.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTMaterial.cpp.o -MFMaterial.cpp.o.d -MM Material.cpp
 
-$(IntermediateDirectory)/MenuAgendamento.cpp$(ObjectSuffix): MenuAgendamento.cpp $(IntermediateDirectory)/MenuAgendamento.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/MenuAgendamento.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/MenuAgendamento.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/MenuAgendamento.cpp$(DependSuffix): MenuAgendamento.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/MenuAgendamento.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/MenuAgendamento.cpp$(DependSuffix) -MM MenuAgendamento.cpp
+Material.cpp-i: Material.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) Material.cpp-i Material.cpp
 
-$(IntermediateDirectory)/MenuAgendamento.cpp$(PreprocessSuffix): MenuAgendamento.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/MenuAgendamento.cpp$(PreprocessSuffix) MenuAgendamento.cpp
+PessoaFisica.cpp.o: PessoaFisica.cpp PessoaFisica.cpp.o.d
+	$(CXX)  $(SourceSwitch) "PessoaFisica.cpp" $(CXXFLAGS) $(ObjectSwitch)PessoaFisica.cpp.o $(IncludePath)
+PessoaFisica.cpp.o.d: PessoaFisica.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTPessoaFisica.cpp.o -MFPessoaFisica.cpp.o.d -MM PessoaFisica.cpp
 
-$(IntermediateDirectory)/menuManterMaterialMain.cpp$(ObjectSuffix): menuManterMaterialMain.cpp $(IntermediateDirectory)/menuManterMaterialMain.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/menuManterMaterialMain.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/menuManterMaterialMain.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/menuManterMaterialMain.cpp$(DependSuffix): menuManterMaterialMain.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/menuManterMaterialMain.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/menuManterMaterialMain.cpp$(DependSuffix) -MM menuManterMaterialMain.cpp
+PessoaFisica.cpp-i: PessoaFisica.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) PessoaFisica.cpp-i PessoaFisica.cpp
 
-$(IntermediateDirectory)/menuManterMaterialMain.cpp$(PreprocessSuffix): menuManterMaterialMain.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/menuManterMaterialMain.cpp$(PreprocessSuffix) menuManterMaterialMain.cpp
+Util.cpp.o: Util.cpp Util.cpp.o.d
+	$(CXX)  $(SourceSwitch) "Util.cpp" $(CXXFLAGS) $(ObjectSwitch)Util.cpp.o $(IncludePath)
+Util.cpp.o.d: Util.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTUtil.cpp.o -MFUtil.cpp.o.d -MM Util.cpp
 
-$(IntermediateDirectory)/Alimento.cpp$(ObjectSuffix): Alimento.cpp $(IntermediateDirectory)/Alimento.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/Alimento.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Alimento.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Alimento.cpp$(DependSuffix): Alimento.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Alimento.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Alimento.cpp$(DependSuffix) -MM Alimento.cpp
+Util.cpp-i: Util.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) Util.cpp-i Util.cpp
 
-$(IntermediateDirectory)/Alimento.cpp$(PreprocessSuffix): Alimento.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Alimento.cpp$(PreprocessSuffix) Alimento.cpp
+PessoaJuridica.cpp.o: PessoaJuridica.cpp PessoaJuridica.cpp.o.d
+	$(CXX)  $(SourceSwitch) "PessoaJuridica.cpp" $(CXXFLAGS) $(ObjectSwitch)PessoaJuridica.cpp.o $(IncludePath)
+PessoaJuridica.cpp.o.d: PessoaJuridica.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTPessoaJuridica.cpp.o -MFPessoaJuridica.cpp.o.d -MM PessoaJuridica.cpp
 
-$(IntermediateDirectory)/Residuo.cpp$(ObjectSuffix): Residuo.cpp $(IntermediateDirectory)/Residuo.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/Residuo.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Residuo.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Residuo.cpp$(DependSuffix): Residuo.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Residuo.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Residuo.cpp$(DependSuffix) -MM Residuo.cpp
+PessoaJuridica.cpp-i: PessoaJuridica.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) PessoaJuridica.cpp-i PessoaJuridica.cpp
 
-$(IntermediateDirectory)/Residuo.cpp$(PreprocessSuffix): Residuo.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Residuo.cpp$(PreprocessSuffix) Residuo.cpp
+Agendamento.cpp.o: Agendamento.cpp Agendamento.cpp.o.d
+	$(CXX)  $(SourceSwitch) "Agendamento.cpp" $(CXXFLAGS) $(ObjectSwitch)Agendamento.cpp.o $(IncludePath)
+Agendamento.cpp.o.d: Agendamento.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTAgendamento.cpp.o -MFAgendamento.cpp.o.d -MM Agendamento.cpp
 
-$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
+Agendamento.cpp-i: Agendamento.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) Agendamento.cpp-i Agendamento.cpp
 
-$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+menuManterPessoaMain.cpp.o: menuManterPessoaMain.cpp menuManterPessoaMain.cpp.o.d
+	$(CXX)  $(SourceSwitch) "menuManterPessoaMain.cpp" $(CXXFLAGS) $(ObjectSwitch)menuManterPessoaMain.cpp.o $(IncludePath)
+menuManterPessoaMain.cpp.o.d: menuManterPessoaMain.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTmenuManterPessoaMain.cpp.o -MFmenuManterPessoaMain.cpp.o.d -MM menuManterPessoaMain.cpp
 
-$(IntermediateDirectory)/Material.cpp$(ObjectSuffix): Material.cpp $(IntermediateDirectory)/Material.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/Material.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Material.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Material.cpp$(DependSuffix): Material.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Material.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Material.cpp$(DependSuffix) -MM Material.cpp
+menuManterPessoaMain.cpp-i: menuManterPessoaMain.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) menuManterPessoaMain.cpp-i menuManterPessoaMain.cpp
 
-$(IntermediateDirectory)/Material.cpp$(PreprocessSuffix): Material.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Material.cpp$(PreprocessSuffix) Material.cpp
+Usuario.cpp.o: Usuario.cpp Usuario.cpp.o.d
+	$(CXX)  $(SourceSwitch) "Usuario.cpp" $(CXXFLAGS) $(ObjectSwitch)Usuario.cpp.o $(IncludePath)
+Usuario.cpp.o.d: Usuario.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTUsuario.cpp.o -MFUsuario.cpp.o.d -MM Usuario.cpp
 
-$(IntermediateDirectory)/PessoaFisica.cpp$(ObjectSuffix): PessoaFisica.cpp $(IntermediateDirectory)/PessoaFisica.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/PessoaFisica.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/PessoaFisica.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/PessoaFisica.cpp$(DependSuffix): PessoaFisica.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/PessoaFisica.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/PessoaFisica.cpp$(DependSuffix) -MM PessoaFisica.cpp
+Usuario.cpp-i: Usuario.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) Usuario.cpp-i Usuario.cpp
 
-$(IntermediateDirectory)/PessoaFisica.cpp$(PreprocessSuffix): PessoaFisica.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/PessoaFisica.cpp$(PreprocessSuffix) PessoaFisica.cpp
+Pessoa.cpp.o: Pessoa.cpp Pessoa.cpp.o.d
+	$(CXX)  $(SourceSwitch) "Pessoa.cpp" $(CXXFLAGS) $(ObjectSwitch)Pessoa.cpp.o $(IncludePath)
+Pessoa.cpp.o.d: Pessoa.cpp
+	@$(CXX) $(CXXFLAGS)  $(IncludePath) -MG -MP -MTPessoa.cpp.o -MFPessoa.cpp.o.d -MM Pessoa.cpp
 
-$(IntermediateDirectory)/Util.cpp$(ObjectSuffix): Util.cpp $(IntermediateDirectory)/Util.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/Util.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Util.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Util.cpp$(DependSuffix): Util.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Util.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Util.cpp$(DependSuffix) -MM Util.cpp
+Pessoa.cpp-i: Pessoa.cpp
+	$(CXX) $(CXXFLAGS)  $(IncludePath) -E $(OutputSwitch) Pessoa.cpp-i Pessoa.cpp
+	
+main: PontoDeColeta.cpp.o MenuAgendamento.cpp.o menuManterMaterialMain.cpp.o Alimento.cpp.o Residuo.cpp.o main.cpp.o Material.cpp.o PessoaFisica.cpp.o Util.cpp.o PessoaJuridica.cpp.o Agendamento.cpp.o menuManterPessoaMain.cpp.o Usuario.cpp.o Pessoa.cpp.o   
+	${CXX} ${CXXFLAGS} -o PDSII_Grupo7 PontoDeColeta.cpp.o MenuAgendamento.cpp.o menuManterMaterialMain.cpp.o Alimento.cpp.o Residuo.cpp.o main.cpp.o Material.cpp.o PessoaFisica.cpp.o Util.cpp.o PessoaJuridica.cpp.o Agendamento.cpp.o menuManterPessoaMain.cpp.o Usuario.cpp.o Pessoa.cpp.o   
 
-$(IntermediateDirectory)/Util.cpp$(PreprocessSuffix): Util.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Util.cpp$(PreprocessSuffix) Util.cpp
-
-$(IntermediateDirectory)/PessoaJuridica.cpp$(ObjectSuffix): PessoaJuridica.cpp $(IntermediateDirectory)/PessoaJuridica.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/PessoaJuridica.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/PessoaJuridica.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/PessoaJuridica.cpp$(DependSuffix): PessoaJuridica.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/PessoaJuridica.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/PessoaJuridica.cpp$(DependSuffix) -MM PessoaJuridica.cpp
-
-$(IntermediateDirectory)/PessoaJuridica.cpp$(PreprocessSuffix): PessoaJuridica.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/PessoaJuridica.cpp$(PreprocessSuffix) PessoaJuridica.cpp
-
-$(IntermediateDirectory)/Agendamento.cpp$(ObjectSuffix): Agendamento.cpp $(IntermediateDirectory)/Agendamento.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/Agendamento.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Agendamento.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Agendamento.cpp$(DependSuffix): Agendamento.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Agendamento.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Agendamento.cpp$(DependSuffix) -MM Agendamento.cpp
-
-$(IntermediateDirectory)/Agendamento.cpp$(PreprocessSuffix): Agendamento.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Agendamento.cpp$(PreprocessSuffix) Agendamento.cpp
-
-$(IntermediateDirectory)/menuManterPessoaMain.cpp$(ObjectSuffix): menuManterPessoaMain.cpp $(IntermediateDirectory)/menuManterPessoaMain.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/menuManterPessoaMain.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/menuManterPessoaMain.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/menuManterPessoaMain.cpp$(DependSuffix): menuManterPessoaMain.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/menuManterPessoaMain.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/menuManterPessoaMain.cpp$(DependSuffix) -MM menuManterPessoaMain.cpp
-
-$(IntermediateDirectory)/menuManterPessoaMain.cpp$(PreprocessSuffix): menuManterPessoaMain.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/menuManterPessoaMain.cpp$(PreprocessSuffix) menuManterPessoaMain.cpp
-
-$(IntermediateDirectory)/Usuario.cpp$(ObjectSuffix): Usuario.cpp $(IntermediateDirectory)/Usuario.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/Usuario.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Usuario.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Usuario.cpp$(DependSuffix): Usuario.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Usuario.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Usuario.cpp$(DependSuffix) -MM Usuario.cpp
-
-$(IntermediateDirectory)/Usuario.cpp$(PreprocessSuffix): Usuario.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Usuario.cpp$(PreprocessSuffix) Usuario.cpp
-
-$(IntermediateDirectory)/Pessoa.cpp$(ObjectSuffix): Pessoa.cpp $(IntermediateDirectory)/Pessoa.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/workspace/workspace/PDSII_Grupo7/Pessoa.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Pessoa.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Pessoa.cpp$(DependSuffix): Pessoa.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Pessoa.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Pessoa.cpp$(DependSuffix) -MM Pessoa.cpp
-
-$(IntermediateDirectory)/Pessoa.cpp$(PreprocessSuffix): Pessoa.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Pessoa.cpp$(PreprocessSuffix) Pessoa.cpp
-
-
--include $(IntermediateDirectory)/*$(DependSuffix)
-##
-## Clean
-##
+# Rule for cleaning files generated during compilation.
+# Call 'make clean' to use it
 clean:
-	$(RM) -r ./Debug/
-
+	rm -f PDSII_Grupo7 *.o *.d
 
